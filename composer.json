@@ -1,0 +1,22 @@
+{
+  "name": "carno-php/promise",
+  "license": "MIT",
+  "require-dev": {
+    "phpunit/phpunit": "~6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Carno\\Promise\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Carno\\Promise\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
