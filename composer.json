@@ -4,9 +4,6 @@
   "require": {
     "php": "^7.2"
   },
-  "require-dev": {
-    "phpunit/phpunit": "~7"
-  },
   "autoload": {
     "psr-4": {
       "Carno\\Promise\\": "src"
@@ -17,6 +14,7 @@
       "Carno\\Promise\\Tests\\": "tests"
     }
   },
+  "minimum-stability": "dev",
   "extra": {
     "branch-alias": {
       "dev-master": "1.0-dev"
