@@ -69,6 +69,6 @@ trait Race
      */
     private function rpException($test = null) : Throwable
     {
-        return $test instanceof Throwable ? $test : new RacingLoser;
+        return $test instanceof Throwable ? $test : new RacingLoser();
     }
 }

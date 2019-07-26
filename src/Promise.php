@@ -22,7 +22,12 @@ use TypeError;
 
 final class Promise implements Promised
 {
-    use All, Deferred, Race, Settled, Sync, Fusion;
+    use All;
+    use Race;
+    use Settled;
+    use Deferred;
+    use Sync;
+    use Fusion;
 
     /**
      * PENDING is initial state
@@ -63,7 +68,7 @@ final class Promise implements Promised
     public function __construct(?callable $executor)
     {
         Stats::proposed($this);
-        $this->stack = new SplStack;
+        $this->stack = new SplStack();
         $executor && $this->calling($executor, $this, [$this]);
     }
 

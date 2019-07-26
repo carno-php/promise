@@ -49,7 +49,7 @@ final class Stats
      */
     public static function proposed(Promised $ins) : void
     {
-        self::$pending ++;
+        self::$pending++;
         self::$observer && (self::$observer)(self::PROPOSED, $ins);
     }
 
@@ -58,7 +58,7 @@ final class Stats
      */
     public static function confirmed(Promised $ins) : void
     {
-        self::$pending --;
+        self::$pending--;
         self::$observer && (self::$observer)(self::CONFIRMED, $ins);
     }
 }

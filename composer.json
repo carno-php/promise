@@ -2,7 +2,7 @@
   "name": "carno-php/promise",
   "license": "MIT",
   "require": {
-    "php": "^7.2"
+    "php": "^7.1"
   },
   "autoload": {
     "psr-4": {

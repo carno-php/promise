@@ -63,6 +63,6 @@ final class Stacked
      */
     private static function next() : int
     {
-        return self::$sid ++ >= PHP_INT_MAX ? self::$sid = 1 : self::$sid;
+        return self::$sid++ >= PHP_INT_MAX ? self::$sid = 1 : self::$sid;
     }
 }
